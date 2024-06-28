@@ -1,0 +1,43 @@
+.card {
+    margin: 15px 10px;
+    padding: 0;
+    border-radius: 16px;
+    position: relative;
+}
+
+.small {
+    grid-row: span 28;
+}
+  
+.medium {
+    grid-row: span 36;
+}
+
+.large {
+    grid-row: span 44;
+}
+
+.bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.card-bg-tint {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba( 0, 0, 0 , 0.15);
+    color: white;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.author {
+    font-size: 14px;
+}
