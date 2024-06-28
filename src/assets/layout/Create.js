@@ -5,6 +5,7 @@ import './css/Create.css';
 function Create() {
   const [contentColor, setContentColor] = useState('rgba(255, 255, 255, 1)');
   const [backgroundImage, setBackgroundImage] = useState('');
+  const [displayColorPicker, setDisplayColorPicker] = useState(false);
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
@@ -21,9 +22,13 @@ function Create() {
     setContentColor(`rgba(${color.rgb.r}, ${color.rgb.g}, ${color.rgb.b}, ${color.rgb.a})`);
   };
 
+  const handleColorPickerClick = () => {
+    setDisplayColorPicker(!displayColorPicker);
+  };
+
   return (
     <div>
-      <p>Create Post</p>
+      <p className='page-title'>Create Post</p>
       <div className='form-group'>
         
         <div className='img-container'>
@@ -41,31 +46,41 @@ function Create() {
           </label>
           <label>
             Content:
-            <input className='input-create-content' type='text' placeholder='Content' />
+            <textarea className='input-create-content' type='text' placeholder='Content' />
           </label>
           <label>
             Author:
             <input className='input-create' type='text' placeholder='Author' />
           </label>
-          <label>
-            Category:
-            <select className='input-create'>
-              <option value='poem'>Poem</option>
-              <option value='quote'>Quote</option>
-              <option value='thought'>Thought</option>
-              <option value='haikyuu'>Haikyuu</option>
-            </select>
-          </label>
+          <div className='category-color-container'>
+            <label>
+              Category:
+              <select className='category-input'>
+                <option value='poem'>Poem</option>
+                <option value='quote'>Quote</option>
+                <option value='thought'>Thought</option>
+                <option value='haikyuu'>Haikyuu</option>
+              </select>
+            </label>
+
+            <label>
+              Text color on Img :
+              <div className='category-color-container'>
+                <div className='preview-color' style={{ backgroundColor: contentColor }}></div>
+                <p onClick={handleColorPickerClick} className='open-login-button button'>{displayColorPicker? 'Apply' : 'Select'}</p>
+              </div>
+              {displayColorPicker && (<>
+                <SketchPicker className='color-picker' color={contentColor} onChange={handleContentColorChange} />
+              </>
+              )}
+            </label>
+          </div>
           <label>
             Tags (separate them with commas):
             <input className='input-create' type='text' placeholder='Separate them with , ' />
           </label>
         </div>
       </div>
-          <label>
-            Content Color (RGBA):
-            <SketchPicker color={contentColor} onChange={handleContentColorChange} />
-          </label>
     </div>
   );
 }
