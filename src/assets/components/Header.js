@@ -30,7 +30,8 @@ function Header( props)  {
       <div className="nav-links">
         <a className={Selected === 'Home' ? 'selected' : '' } href="#home" onClick={()=>{select('Home')}}>Home</a>
         <a className={Selected === 'Explore' ? 'selected' : '' } href="#explore" onClick={()=>{select('Explore')}}>Explore</a>
-        <a className={Selected === 'Create' ? 'selected' : '' } href="#create" onClick={()=>{select('Create')}}>Create</a>
+        { isLoggedIn && (
+        <a className={Selected === 'Create' ? 'selected' : '' } href="#create" onClick={()=>{select('Create')}}>Create</a>)}
       </div>
       <div className="search-container">
         <input type="text" placeholder="Search" className="search-input" />
@@ -53,6 +54,7 @@ function Header( props)  {
     <Login
         isVisible={isLoginOverlayVisible}
         onClose={closeLogin}
+        accountStaus={false}
       />
     
     </>

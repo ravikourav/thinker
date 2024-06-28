@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './css/Login.css';
 
-function Login({ isVisible, onClose }) {
+function Login({ isVisible, onClose , accountStaus }) {
 
-  const [hasAccount, setHasAccount] = useState(false);
+  const [hasAccount, setHasAccount] = useState(accountStaus);
 
   if (!isVisible) {
     return null;

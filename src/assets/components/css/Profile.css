@@ -1,0 +1,59 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.profile-img {
+    width: 150px;
+}
+
+p {
+    margin: 0;
+    text-align: center;
+}
+
+.user-name {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.user-id {
+    font-weight: 400;
+    color: rgb(122, 122, 122);
+}
+
+.follow-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.follow-container div {
+    margin: 5px 15px;
+}
+
+.post-container {
+    margin: 15px 0px;
+}
+
+.post-selector-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.post-selector {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.post-selected {    
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 3px;
+    text-decoration-style: solid;
+}
