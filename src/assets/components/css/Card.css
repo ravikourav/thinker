@@ -41,3 +41,21 @@
 .author {
     font-size: 14px;
 }
+
+.explore-bg-tint {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: rgba( 0, 0, 0 , 0.3);
+    color: white;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.explore-content {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}

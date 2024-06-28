@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import './css/Header.css';
 import placeholder from '../image/profile.png';
 import Login from './Login';
+import { Link } from 'react-router-dom';
 
-import { HiMiniChatBubbleOvalLeftEllipsis ,HiMiniBell} from "react-icons/hi2";
+import {HiMiniBell} from "react-icons/hi2";
 
-function Header( props)  {
+function Header(props)  {
 
   const [Selected , setSelected] = useState('Home');
   const [isLoggedIn] = useState(props.logedin);
@@ -28,24 +29,25 @@ function Header( props)  {
     <div className="header-container">
       <img className="logo" src="/logo192.png" alt="Logo" />
       <div className="nav-links">
-        <a className={Selected === 'Home' ? 'selected' : '' } href="#home" onClick={()=>{select('Home')}}>Home</a>
-        <a className={Selected === 'Explore' ? 'selected' : '' } href="#explore" onClick={()=>{select('Explore')}}>Explore</a>
+        <Link className={Selected === 'Home' ? 'selected' : '' } to="/" onClick={()=>{select('Home')}}>Home</Link>
+        <Link className={Selected === 'Explore' ? 'selected' : '' } to="explore" onClick={()=>{select('Explore')}}>Explore</Link>
         { isLoggedIn && (
-        <a className={Selected === 'Create' ? 'selected' : '' } href="#create" onClick={()=>{select('Create')}}>Create</a>)}
+        <Link className={Selected === 'Create' ? 'selected' : '' } to="create" onClick={()=>{select('Create')}}>Create</Link>)}
       </div>
       <div className="search-container">
-        <input type="text" placeholder="Search" className="search-input" />
+        <input type="text" placeholder="Search" className="input-login search-input" />
       </div>
       <div className="user-container">
         {isLoggedIn ? (
           <div>
             <HiMiniBell className='icon' />
-            <HiMiniChatBubbleOvalLeftEllipsis className='icon'/>
-            <img className="profile-picture" src={placeholder} alt="User" />
+            <Link to='profile' onClick={()=>{select('profile')}} >
+              <img className={`profile-picture ${Selected ==='profile' && 'profile-picture-selected' }`} src={placeholder} alt="User" />
+            </Link>
           </div>
         ) : (
           <div>
-            <a className="login-button" onClick={openLogin} href="#login">Login</a>
+            <p className="open-login-button" onClick={openLogin} >Login</p>
           </div>
         )}
       </div>

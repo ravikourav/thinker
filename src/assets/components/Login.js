@@ -34,11 +34,11 @@ function Login({ isVisible, onClose , accountStaus }) {
             <form>
               <div>
                 <label>Email address</label>
-                <input type="text" placeholder="Email" name="username" />
+                <input className='input-login' type="text" placeholder="Email" name="username" />
               </div>
               <div>
                 <label>Password</label>
-                <input type="password" placeholder="Password" name="password" />
+                <input className='input-login' type="password" placeholder="Password" name="password" />
               </div>
               <button className="forgot-button" type="button">Forgot Your Password?</button>
             </form>
@@ -60,15 +60,15 @@ function Login({ isVisible, onClose , accountStaus }) {
             <form>
               <div>
                 <label>Email address</label>
-                <input type="text" placeholder="Email" name="username" />
+                <input className='input-login' type="text" placeholder="Email" name="username" />
               </div>
               <div>
                 <label>Password</label>
-                <input type="password" placeholder="Password" name="password" />
+                <input className='input-login' type="password" placeholder="Password" name="password" />
               </div>
               <div>
                 <label>Date of birth</label>
-                <input type="text" placeholder="dd/mm/yyyy" name="dob" />
+                <input className='input-login' type="text" placeholder="dd/mm/yyyy" name="dob" />
               </div>
             </form>
             <button className="login-button" type="submit">Continue</button>
