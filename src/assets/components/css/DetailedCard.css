@@ -1,6 +1,6 @@
 .modal-wraper {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -36,7 +36,7 @@
 /* info model css */
 
 .modal-box {
-  margin:10px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   background-color: #fefefe;
@@ -116,4 +116,18 @@
   display: flex;
   flex: 1;
   margin: 0px 5px;
+}
+
+.send-comment {
+  width: 34px;
+  height: 34px;
+  padding: 3px;
+}
+
+.send-comment:hover,
+.send-comment:focus {
+  border-radius: 50%;
+  background-color: #eeeeee;
+  text-decoration: none;
+  cursor: pointer;
 }

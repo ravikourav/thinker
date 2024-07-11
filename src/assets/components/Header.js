@@ -9,7 +9,7 @@ import {HiMiniBell} from "react-icons/hi2";
 function Header()  {
 
   const [Selected , setSelected] = useState('Home');
-  const [isLoggedIn] = useState(false);
+  const [isLoggedIn] = useState(true);
   const [isLoginOverlayVisible, setIsLoginOverlayVisible] = useState(false);
 
   const openLogin = () => {

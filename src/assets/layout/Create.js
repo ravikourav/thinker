@@ -89,6 +89,8 @@ function Create() {
             Tags (separate them with commas):
             <input className='main-input input-create' type='text' placeholder='Separate them with , ' />
           </label>
+
+          <button type='submit' className='main-button submit-post'>Submit</button>
         </div>
       </div>
     </div>

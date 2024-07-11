@@ -23,6 +23,7 @@
     justify-content: center;
     width: 512px;
     border-radius: 25px;
+    margin: 0px 15px;
 }
 
 .uploaded-image {
@@ -83,4 +84,11 @@ input::file-selector-button {
 
 .button {
     margin: 0;
+}
+
+.submit-post {
+    border: none;
+    height: 50px;
+    width: 610px;
+    margin-top: 5px;
 }
