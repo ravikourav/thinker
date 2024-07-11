@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import ExploreCard from '../components/ExploreCard';
-
 import { ReactComponent as BackImg } from '../image/arrow-back.svg';
 
 import categoryData from '../../temp/Explore.json';
@@ -38,7 +37,6 @@ function Explore() {
               background={selectedCard.background}
               slogan={selectedCard.slogan}
             />
-            
           </div>
         )}
       </div>

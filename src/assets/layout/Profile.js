@@ -1,17 +1,15 @@
 import React, { useState , useEffect} from 'react';
 import './css/Profile.css';
-import Card from '../components/Card.js';
-import DetailedCard from '../components/DetailedCard.js';
 import userImg from '../image/profile.png';
 
 import cardData from '../../temp/card.json';
 import saveData from '../../temp/save.json';
+import CardGrid from '../components/CardGrid.js';
 
 function Profile() {
 
     const [postedData, setPostedData] = useState([]);
     const [saveCardData, setSaveCardData] = useState([]);
-    const [selectedCard, setSelectedCard] = useState(null);
 
     const [selected , setSelected] = useState('your-thought');
 
@@ -19,14 +17,6 @@ function Profile() {
         setPostedData(cardData);
         setSaveCardData(saveData);
     }, []);
-
-    const handleCardClick = (card) => {
-        setSelectedCard(card);
-    };
-    
-    const handleCloseModal = () => {
-        setSelectedCard(null);
-    };
 
     const selectContent = (select) => {
         setSelected(select);
@@ -55,26 +45,7 @@ function Profile() {
                 <p className= {`post-selector ${ selected === "your-thought" && 'post-selected'}`} onClick={()=>{selectContent('your-thought')}}>Your Posts</p>
                 <p className= {`post-selector ${ selected === "saved" && 'post-selected'}`} onClick={()=>{selectContent('saved')}}>Saved</p>
             </div>
-            {!selectedCard ? (
-                <div className='card-layout'>
-                    {displayData.map((card, index) => (
-                        <Card
-                        key={index}
-                        size='small'
-                        content={card.content}
-                        textColor={card.contentColor}  // Pass the textColor prop here
-                        author={card.author}
-                        background={card.background}
-                        onClick={() => handleCardClick(card)}
-                        />
-                    ))}
-                </div>
-            ) : (
-                <DetailedCard 
-                selectedCard={selectedCard}
-                onClose={handleCloseModal}
-                />
-            )}
+            <CardGrid data={displayData}/>
         </div>
     </div>
   )
