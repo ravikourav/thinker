@@ -9,8 +9,9 @@ function DetailedCard({ selectedCard, onClose }) {
 
   return (
     <div className="modal-wraper">
-      <BackIcon className='close' onClick={onClose} />
 
+      <BackIcon className='close' onClick={onClose} />
+      
       <div className='content-wraper'>
       <Card 
         size='large'

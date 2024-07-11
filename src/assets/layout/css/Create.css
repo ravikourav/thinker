@@ -3,7 +3,7 @@
     font-weight: 600;
     text-decoration: underline;
     text-align: left;
-    margin: 20px 20px;
+    margin: 25px 0px 10px 25px;
 }
 
 .form-group {
@@ -12,6 +12,10 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0px 25px;
+    padding: 25px;
+    border-radius: 50px;
+    border: 1px solid rgb(224,224,224);
 }
 
 .img-container {

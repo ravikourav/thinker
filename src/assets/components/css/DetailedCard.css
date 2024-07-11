@@ -8,12 +8,16 @@
 }
 
 .close {
+  position: fixed;
+  top: 75px;
+  left: 20px;
   padding: 5px;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   color: black;
   font-weight: bold;
   border-radius: 50%;
+  z-index: 1000;
 }
   
 .close:hover,

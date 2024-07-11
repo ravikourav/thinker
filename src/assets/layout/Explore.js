@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import ExploreCard from '../components/ExploreCard';
 
+import { ReactComponent as BackImg } from '../image/arrow-back.svg';
+
 import categoryData from '../../temp/Explore.json';
 
 function Explore() {
@@ -29,12 +31,14 @@ function Explore() {
             />
           ))
         ) : (
-          <div className='teg-card-layout'>
-            <h2>Category Selected</h2>
-            <p>Name: {selectedCard.name}</p>
-            <p>Slogan: {selectedCard.slogan}</p>
-            <img src={selectedCard.background} alt={selectedCard.name} />
-            <button onClick={() => setSelectedCard(null)}>Back to Categories</button>
+          <div className='tag-card-layout'>
+            <BackImg className='close' onClick={() => setSelectedCard(null)} />
+            <ExploreCard
+              name={selectedCard.name}
+              background={selectedCard.background}
+              slogan={selectedCard.slogan}
+            />
+            
           </div>
         )}
       </div>
