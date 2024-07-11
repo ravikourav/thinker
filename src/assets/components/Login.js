@@ -1,6 +1,6 @@
 import React, { useState , useEffect} from 'react';
 import './css/Login.css';
-
+import {ReactComponent as CloseImg} from '../image/close.svg';
 function Login({ isVisible, onClose , accountStaus }) {
 
   const [hasAccount, setHasAccount] = useState(accountStaus);
@@ -28,27 +28,28 @@ function Login({ isVisible, onClose , accountStaus }) {
       <div className="overlay-content">
         <div className="overlay-header">
           <img src="./logo192.png" alt="logo" className="logo" />
-          <button onClick={onClose} className="close-button">X</button>
+          <CloseImg onClick={onClose} className="close-button" />
         </div>
 
         {hasAccount ? (
           <div className="body">
-            <div>
-              <h2 className='login-model-name'>Welcome to Thinker</h2>
-              <h3 className='login-model-slogan'>Spark Minds, Share Moments</h3>
+            <div className='login-appname-container'>
+              <p className='login-model-welcome'>Welcome To</p>
+              <p className='login-model-name'>Wise Men Said</p>
+              <p className='login-model-slogan'>"Spark Minds, Share Moments"</p>
             </div>
-            <form>
+            <form >
               <div>
                 <label>Email address</label>
-                <input className='input-login' type="text" placeholder="Email" name="username" />
+                <input className='main-input input-login' type="text" placeholder="Email" name="username" />
               </div>
               <div>
                 <label>Password</label>
-                <input className='input-login' type="password" placeholder="Password" name="password" />
+                <input className='main-input input-login' type="password" placeholder="Password" name="password" />
               </div>
               <button className="forgot-button" type="button">Forgot Your Password?</button>
             </form>
-            <button className="login-button" type="submit">Log in</button>
+            <button className="main-button login-button" type="submit">Log in</button>
             <button
               className="signup-button"
               type="button"
@@ -59,25 +60,26 @@ function Login({ isVisible, onClose , accountStaus }) {
           </div>
         ) : (
           <div className="body">
-            <div>
-              <h2 className='login-model-name'>Welcome to Thinker</h2>
-              <h3 className='login-model-slogan'>Spark Minds, Share Moments</h3>
+            <div className='login-appname-container'>
+              <p className='login-model-welcome'>Welcome To</p>
+              <p className='login-model-name'>Wise Men Said</p>
+              <p className='login-model-slogan'>"Spark Minds, Share Moments"</p>
             </div>
             <form>
               <div>
                 <label>Email address</label>
-                <input className='input-login' type="text" placeholder="Email" name="username" />
+                <input className='main-input input-login' type="text" placeholder="Email" name="username" />
               </div>
               <div>
                 <label>Password</label>
-                <input className='input-login' type="password" placeholder="Password" name="password" />
+                <input className='main-input input-login' type="password" placeholder="Password" name="password" />
               </div>
               <div>
                 <label>Date of birth</label>
-                <input className='input-login' type="text" placeholder="dd/mm/yyyy" name="dob" />
+                <input className='main-input input-login' type="text" placeholder="dd/mm/yyyy" name="dob" />
               </div>
             </form>
-            <button className="login-button" type="submit">Continue</button>
+            <button className="main-button login-button" type="submit">Continue</button>
             <button
               className="signup-button"
               type="button"
