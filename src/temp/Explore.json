@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Anime",
+        "background": "https://picsum.photos/200/300?anime",
+        "slogan": "Dive into a world of imagination"
+    },
+    {
+        "name": "Nature",
+        "background": "https://picsum.photos/200/300?nature",
+        "slogan": "Experience the beauty of the earth"
+    },
+    {
+        "name": "Technology",
+        "background": "https://picsum.photos/200/300?tech",
+        "slogan": "Embrace the future"
+    },
+    {
+        "name": "Travel",
+        "background": "https://picsum.photos/200/300?travel",
+        "slogan": "Discover new horizons"
+    },
+    {
+        "name": "Food",
+        "background": "https://picsum.photos/200/300?food",
+        "slogan": "Savor the flavors"
+    },
+    {
+        "name": "Sports",
+        "background": "https://picsum.photos/200/300?sports",
+        "slogan": "Feel the adrenaline"
+    },
+    {
+        "name": "Art",
+        "background": "https://picsum.photos/200/300?art",
+        "slogan": "Inspire your creativity"
+    },
+    {
+        "name": "Music",
+        "background": "https://picsum.photos/200/300?music",
+        "slogan": "Find your rhythm"
+    },
+    {
+        "name": "History",
+        "background": "https://picsum.photos/200/300?history",
+        "slogan": "Explore the past"
+    },
+    {
+        "name": "Fashion",
+        "background": "https://picsum.photos/200/300?fashion",
+        "slogan": "Express your style"
+    }
+]

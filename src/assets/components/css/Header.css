@@ -44,7 +44,7 @@ a {
   margin: 0px 5px;
 }
 
-.selected {
+.nav-selected {
   background-color: #000000;
   color: #ffffff;
   border-radius: 30px;
@@ -55,21 +55,23 @@ a {
   flex-grow: 1;
 }
 
-.search-container input {
-  width: 100%;
+.search-input {
   padding: 0px 12px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  font-size: 18px;
+  width: 100%;
+  height: 40px;
   margin: 0px 5px;
 }
 
-.open-login-button {
+.main-button {
   font-size: 18px;
   font-weight: 500;
-  background-color: #ff0000;
+  background-color: var(--MainColor);
   color: #ffffff;
   border-radius: 30px;
   padding: 10px 20px;
   cursor: pointer;
+}
+
+.left-nav-links {
+  width: 108px;
 }

@@ -28,7 +28,7 @@ function Create() {
 
   return (
     <div>
-      <p className='page-title'>Create Post</p>
+      <p className='create-page-title'>Create Post</p>
       <div className='form-group'>
         
         <div className='img-container'>
@@ -42,20 +42,30 @@ function Create() {
         <div className='content-container'>
           <label>
             Content:
-            <input className='input-create' type='text' placeholder='Title' />
+            <input className='main-input input-create' type='text' placeholder='Title' />
           </label>
           <label>
             Content:
-            <textarea className='input-create-content' type='text' placeholder='Content' />
+            <textarea className='main-input input-create-content' type='text' placeholder='Content' />
           </label>
           <label>
             Author:
-            <input className='input-create' type='text' placeholder='Author' />
+            <input className='main-input input-create' type='text' placeholder='Author' />
           </label>
           <div className='category-color-container'>
             <label>
               Category:
-              <select className='category-input'>
+              <select className='main-input category-input'>
+                <option value='poem'>Poem</option>
+                <option value='quote'>Quote</option>
+                <option value='thought'>Thought</option>
+                <option value='haikyuu'>Haikyuu</option>
+              </select>
+            </label>
+
+            <label>
+              Tag:
+              <select className='main-input category-input'>
                 <option value='poem'>Poem</option>
                 <option value='quote'>Quote</option>
                 <option value='thought'>Thought</option>
@@ -66,8 +76,8 @@ function Create() {
             <label>
               Text color on Img :
               <div className='category-color-container'>
-                <div className='preview-color' style={{ backgroundColor: contentColor }}></div>
-                <p onClick={handleColorPickerClick} className='open-login-button button'>{displayColorPicker? 'Apply' : 'Select'}</p>
+                <div className='main-input preview-color' style={{ backgroundColor: contentColor }}></div>
+                <p onClick={handleColorPickerClick} className='main-button button'>{displayColorPicker? 'Apply' : 'Select'}</p>
               </div>
               {displayColorPicker && (<>
                 <SketchPicker className='color-picker' color={contentColor} onChange={handleContentColorChange} />
@@ -77,7 +87,7 @@ function Create() {
           </div>
           <label>
             Tags (separate them with commas):
-            <input className='input-create' type='text' placeholder='Separate them with , ' />
+            <input className='main-input input-create' type='text' placeholder='Separate them with , ' />
           </label>
         </div>
       </div>

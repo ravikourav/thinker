@@ -1,9 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import './css/Login.css';
 
 function Login({ isVisible, onClose , accountStaus }) {
 
   const [hasAccount, setHasAccount] = useState(accountStaus);
+
+  useEffect(() => {
+    if (isVisible) {
+      setHasAccount(true); // Reset to login screen when modal becomes visible
+    }
+  }, [isVisible]);
 
   if (!isVisible) {
     return null;
@@ -28,8 +34,8 @@ function Login({ isVisible, onClose , accountStaus }) {
         {hasAccount ? (
           <div className="body">
             <div>
-              <h2>Welcome to Thinker</h2>
-              <h3>Slogan</h3>
+              <h2 className='login-model-name'>Welcome to Thinker</h2>
+              <h3 className='login-model-slogan'>Spark Minds, Share Moments</h3>
             </div>
             <form>
               <div>
@@ -54,8 +60,8 @@ function Login({ isVisible, onClose , accountStaus }) {
         ) : (
           <div className="body">
             <div>
-              <h2>Welcome to Thinker</h2>
-              <h3>Slogan</h3>
+              <h2 className='login-model-name'>Welcome to Thinker</h2>
+              <h3 className='login-model-slogan'>Spark Minds, Share Moments</h3>
             </div>
             <form>
               <div>

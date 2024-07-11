@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 
 import {HiMiniBell} from "react-icons/hi2";
 
-function Header(props)  {
+function Header()  {
 
   const [Selected , setSelected] = useState('Home');
-  const [isLoggedIn] = useState(props.logedin);
+  const [isLoggedIn] = useState(true);
   const [isLoginOverlayVisible, setIsLoginOverlayVisible] = useState(false);
 
   const openLogin = () => {
@@ -29,25 +29,25 @@ function Header(props)  {
     <div className="header-container">
       <img className="logo" src="/logo192.png" alt="Logo" />
       <div className="nav-links">
-        <Link className={Selected === 'Home' ? 'selected' : '' } to="/" onClick={()=>{select('Home')}}>Home</Link>
-        <Link className={Selected === 'Explore' ? 'selected' : '' } to="explore" onClick={()=>{select('Explore')}}>Explore</Link>
+        <Link className={Selected === 'Home' ? 'nav-selected' : '' } to="/" onClick={()=>{select('Home')}}>Home</Link>
+        <Link className={Selected === 'Explore' ? 'nav-selected' : '' } to="explore" onClick={()=>{select('Explore')}}>Explore</Link>
         { isLoggedIn && (
-        <Link className={Selected === 'Create' ? 'selected' : '' } to="create" onClick={()=>{select('Create')}}>Create</Link>)}
+        <Link className={Selected === 'Create' ? 'nav-selected' : '' } to="create" onClick={()=>{select('Create')}}>Create</Link>)}
       </div>
       <div className="search-container">
-        <input type="text" placeholder="Search" className="input-login search-input" />
+        <input type="text" placeholder="Search" className="main-input search-input" />
       </div>
-      <div className="user-container">
+      <div className="header-user-container">
         {isLoggedIn ? (
-          <div>
+          <div className='left-nav-links'>
             <HiMiniBell className='icon' />
-            <Link to='profile' onClick={()=>{select('profile')}} >
+            <Link to='profile' onClick={()=>{select('Profile')}} >
               <img className={`profile-picture ${Selected ==='profile' && 'profile-picture-selected' }`} src={placeholder} alt="User" />
             </Link>
           </div>
         ) : (
           <div>
-            <p className="open-login-button" onClick={openLogin} >Login</p>
+            <p className="main-button" onClick={openLogin} >Login</p>
           </div>
         )}
       </div>
