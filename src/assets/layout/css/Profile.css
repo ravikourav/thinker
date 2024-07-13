@@ -5,14 +5,28 @@
     justify-items: center;
 
 }
+.follow-container {
+    display: flex;
+    flex: row;
+}
+
+.follow-container div {
+    margin: 10px;
+}
 
 .profile-img {
     width: 150px;
 }
 
 p {
+    font-size: 1rem;
     margin: 0;
     text-align: center;
+}
+
+.user-data {
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .user-name {
@@ -23,15 +37,6 @@ p {
 .user-id {
     font-weight: 400;
     color: rgb(122, 122, 122);
-}
-
-.follow-container {
-    display: flex;
-    flex-direction: row;
-}
-
-.follow-container div {
-    margin: 5px 15px;
 }
 
 .post-container {

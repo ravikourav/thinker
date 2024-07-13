@@ -26,16 +26,22 @@ function Profile() {
 
   return (
     <div className='profile-container'>
+
         <img className='profile-img' src={userImg} alt='' />
         <p className='user-name'>Ravi Kourav</p>
         <p className='user-id'>@ravikourav</p>
+
         <div className='follow-container'>
             <div>
-                <p>112</p>
+                <p className='user-data'>5</p>
+                <p>Post</p>
+            </div>
+            <div>
+                <p className='user-data'>112</p>
                 <p>follower</p>
             </div>
             <div>
-                <p>5</p>
+                <p className='user-data'>5</p>
                 <p>following</p>
             </div>
         </div>
