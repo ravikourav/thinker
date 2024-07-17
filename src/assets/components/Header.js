@@ -1,16 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import './css/Header.css';
 import placeholder from '../image/profile.png';
 import Login from './Login';
-import { Link } from 'react-router-dom';
+import { Link , useLocation } from 'react-router-dom';
 
 import {HiMiniBell} from "react-icons/hi2";
 
 function Header()  {
-
-  const [Selected , setSelected] = useState('Home');
+  const location = useLocation();
+  const [Selected , setSelected] = useState(location);
   const [isLoggedIn] = useState(true);
   const [isLoginOverlayVisible, setIsLoginOverlayVisible] = useState(false);
+
+  useEffect(() => {
+    const path = location.pathname.substring(1) || 'Home';
+    setSelected(path.charAt(0).toUpperCase() + path.slice(1));
+  }, [location]);
 
   const openLogin = () => {
     setIsLoginOverlayVisible(true);
@@ -42,7 +47,7 @@ function Header()  {
             <div className='left-nav-links'>
               <HiMiniBell className='icon' />
               <Link to='profile' onClick={()=>{select('Profile')}} >
-                <img className={`profile-picture ${Selected ==='profile' && 'profile-picture-selected' }`} src={placeholder} alt="User" />
+                <img className= 'profile-picture' src={placeholder} alt="User" />
               </Link>
             </div>
           ) : (

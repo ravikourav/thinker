@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { SketchPicker } from 'react-color';
 import './css/Create.css';
 
+import tagData from '../../temp/Explore.json'
+
 function Create() {
+
   const [contentColor, setContentColor] = useState('rgba(255, 255, 255, 1)');
   const [backgroundImage, setBackgroundImage] = useState('');
   const [displayColorPicker, setDisplayColorPicker] = useState(false);
+
+  const [tags , setTags] = useState();
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
@@ -17,6 +22,10 @@ function Create() {
       reader.readAsDataURL(file);
     }
   };
+
+  useEffect(()=>{
+    setTags(tagData);
+  },[]);
 
   const handleContentColorChange = (color) => {
     setContentColor(`rgba(${color.rgb.r}, ${color.rgb.g}, ${color.rgb.b}, ${color.rgb.a})`);
@@ -66,10 +75,9 @@ function Create() {
             <label>
               Tag:
               <select className='main-input category-input'>
-                <option value='poem'>Poem</option>
-                <option value='quote'>Quote</option>
-                <option value='thought'>Thought</option>
-                <option value='haikyuu'>Haikyuu</option>
+                {tags && tags.map((tag)=>(
+                  <option value={tag.name}>{tag.name}</option>
+                ))}
               </select>
             </label>
 
@@ -85,11 +93,6 @@ function Create() {
               )}
             </label>
           </div>
-          <label>
-            Tags (separate them with commas):
-            <input className='main-input input-create' type='text' placeholder='Separate them with , ' />
-          </label>
-
           <button type='submit' className='main-button submit-post'>Submit</button>
         </div>
       </div>

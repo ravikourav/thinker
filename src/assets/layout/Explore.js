@@ -3,6 +3,8 @@ import ExploreCard from '../components/ExploreCard';
 import CardGrid from '../components/CardGrid.js';
 import { ReactComponent as BackImg } from '../image/arrow-back.svg';
 import './css/Explore.css';
+
+
 import categoryData from '../../temp/Explore.json';
 
 function Explore() {
