@@ -11,6 +11,7 @@ const CardGrid = ({ data }) => {
   };
 
   const handleCloseModal = () => {
+    speechSynthesis.cancel();
     setSelectedCard(null);
   };
 

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import ExploreCard from '../components/ExploreCard';
+import CardGrid from '../components/CardGrid.js';
 import { ReactComponent as BackImg } from '../image/arrow-back.svg';
-
+import './css/Explore.css';
 import categoryData from '../../temp/Explore.json';
 
 function Explore() {
@@ -37,6 +38,7 @@ function Explore() {
               background={selectedCard.background}
               slogan={selectedCard.slogan}
             />
+            {selectedCard.cards && <CardGrid data={selectedCard.cards} />}
           </div>
         )}
       </div>

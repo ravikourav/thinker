@@ -1,27 +1,38 @@
 [
-    {
-      "content": "save",
-      "author": "ravi",
+  {
+      "content": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+      "author": "Nelson Mandela",
       "contentColor": "#ffffff",
-      "background": "https://picsum.photos/200/300"
-    },
-    {
-      "content": "asve2",
-      "author": "ravi",
+      "background": "https://picsum.photos/id/101/200/300"
+  },
+  {
+      "content": "The way to get started is to quit talking and begin doing.",
+      "author": "Walt Disney",
       "contentColor": "#ffffff",
-      "background": "https://picsum.photos/200/300"
-    },
-    {
-      "content": "save3",
-      "author": "ravi",
+      "background": "https://picsum.photos/id/102/200/300"
+  },
+  {
+      "content": "Your time is limited, don't waste it living someone else's life.",
+      "author": "Steve Jobs",
       "contentColor": "#ffffff",
-      "background": "https://picsum.photos/200/300"
-    },
-    {
-      "content": "save4",
-      "author": "ravi",
+      "background": "https://picsum.photos/id/103/200/300"
+  },
+  {
+      "content": "If life were predictable it would cease to be life, and be without flavor.",
+      "author": "Eleanor Roosevelt",
       "contentColor": "#ffffff",
-      "background": "https://picsum.photos/200/300"
-    }
+      "background": "https://picsum.photos/id/104/200/300"
+  },
+  {
+      "content": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+      "author": "Winston Churchill",
+      "contentColor": "#ffffff",
+      "background": "https://picsum.photos/id/121/200/300"
+  },
+  {
+      "content": "In the end, it's not the years in your life that count. It's the life in your years.",
+      "author": "Abraham Lincoln",
+      "contentColor": "#ffffff",
+      "background": "https://picsum.photos/id/106/200/300"
+  }
 ]
-  

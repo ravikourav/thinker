@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './css/DetailedCard.css';
 import Card from './Card.js';
 
@@ -7,6 +7,23 @@ import { ReactComponent as SendIcon } from '../image/send.svg';
 import TempImg from '../image/profile.png';
 
 function DetailedCard({ selectedCard, onClose }) {
+
+  const handleTextToSpeech = (text) => {
+    if ('speechSynthesis' in window) {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.voice = speechSynthesis.getVoices().find(voice => voice.lang === 'en-US');
+      speechSynthesis.speak(utterance);
+    } else {
+      alert('Sorry, your browser does not support text to speech.');
+    }
+  };
+
+  useEffect(() => {
+    if (selectedCard && selectedCard.content) {
+      handleTextToSpeech(selectedCard.author + ' said. ' + selectedCard.content);
+    }
+  },[selectedCard]);
+
   return (
     <div className="modal-wraper">
       <BackIcon className='close' onClick={onClose} />

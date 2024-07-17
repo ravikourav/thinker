@@ -1,27 +1,122 @@
 [
     {
-      "content": "quote1",
-      "author": "ravi",
-      "contentColor": "#ffffff",
-      "background": "https://picsum.photos/200/300"
+        "content": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+        "author": "Nelson Mandela",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/101/200/300"
     },
     {
-      "content": "quote2",
-      "author": "ravi",
-      "contentColor": "#ffffff",
-      "background": "https://picsum.photos/200/300"
+        "content": "The way to get started is to quit talking and begin doing.",
+        "author": "Walt Disney",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/102/200/300"
     },
     {
-      "content": "quote3",
-      "author": "ravi",
-      "contentColor": "#ffffff",
-      "background": "https://picsum.photos/200/300"
+        "content": "Your time is limited, don't waste it living someone else's life.",
+        "author": "Steve Jobs",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/103/200/300"
     },
     {
-      "content": "quote4",
-      "author": "ravi",
-      "contentColor": "#ffffff",
-      "background": "https://picsum.photos/200/300"
+        "content": "If life were predictable it would cease to be life, and be without flavor.",
+        "author": "Eleanor Roosevelt",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/104/200/300"
+    },
+    {
+        "content": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+        "author": "Winston Churchill",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/121/200/300"
+    },
+    {
+        "content": "In the end, it's not the years in your life that count. It's the life in your years.",
+        "author": "Abraham Lincoln",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/106/200/300"
+    },
+    {
+        "content": "Believe you can and you're halfway there.",
+        "author": "Theodore Roosevelt",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/107/200/300"
+    },
+    {
+        "content": "You miss 100% of the shots you don't take.",
+        "author": "Wayne Gretzky",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/108/200/300"
+    },
+    {
+        "content": "It does not matter how slowly you go as long as you do not stop.",
+        "author": "Confucius",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/109/200/300"
+    },
+    {
+        "content": "The only way to do great work is to love what you do.",
+        "author": "Steve Jobs",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/110/200/300"
+    },
+    {
+        "content": "If you can dream it, you can achieve it.",
+        "author": "Zig Ziglar",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/111/200/300"
+    },
+    {
+        "content": "It always seems impossible until it's done.",
+        "author": "Nelson Mandela",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/112/200/300"
+    },
+    {
+        "content": "The best revenge is massive success.",
+        "author": "Frank Sinatra",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/113/200/300"
+    },
+    {
+        "content": "Life is what happens when you're busy making other plans.",
+        "author": "John Lennon",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/114/200/300"
+    },
+    {
+        "content": "Strive not to be a success, but rather to be of value.",
+        "author": "Albert Einstein",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/115/200/300"
+    },
+    {
+        "content": "The mind is everything. What you think you become.",
+        "author": "Buddha",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/116/200/300"
+    },
+    {
+        "content": "The only limit to our realization of tomorrow will be our doubts of today.",
+        "author": "Franklin D. Roosevelt",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/117/200/300"
+    },
+    {
+        "content": "Keep your face always toward the sunshine - and shadows will fall behind you.",
+        "author": "Walt Whitman",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/118/200/300"
+    },
+    {
+        "content": "You are never too old to set another goal or to dream a new dream.",
+        "author": "C.S. Lewis",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/119/200/300"
+    },
+    {
+        "content": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
+        "author": "Zig Ziglar",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/120/200/300"
     }
-  ]
-  
+]
