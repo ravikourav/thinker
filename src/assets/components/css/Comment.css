@@ -1,0 +1,86 @@
+.comment-warper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.main-comment {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.comment-profile-picture {
+    width: 40px;
+    height: 40px;
+}
+
+.comment-body {
+    margin-left: 15px;
+    width: 350px;
+}
+.comment-reply-body {
+    margin-left: 15px;
+    width: 250px;
+}
+
+.margin-left-15 {
+    margin-left: 15px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.comment-username {
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.comment-time {
+    margin-left: 10px;
+    text-align: left;
+    font-size: 0.8rem;
+    color: #767676;
+}
+
+.comment-content {
+    text-align: left;
+    font-size: 1rem;
+}
+
+.reply-button {
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #767676;
+}
+.like-container{
+    margin-left: 15px;
+}
+
+.like-comment-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.commnet-like-cont {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #767676;
+}
+
+.reply-container {
+    display: flex;
+    width: 60%;
+    margin-top: 25px;
+}
+
+.reply-profile-picture {
+    width: 30px;
+    height: 30px;
+}

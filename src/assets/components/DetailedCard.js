@@ -5,6 +5,7 @@ import Card from './Card.js';
 import { ReactComponent as BackIcon } from '../image/arrow-back.svg';
 import { ReactComponent as SendIcon } from '../image/send.svg';
 import TempImg from '../image/profile.png';
+import Comment from './Comment.js';
 
 function DetailedCard({ selectedCard, onClose }) {
 
@@ -50,6 +51,12 @@ function DetailedCard({ selectedCard, onClose }) {
             <p className='main-button'>Follow</p>
           </div>
           <div className='comment-container'>
+            <p className='comment-header'>Comments</p>
+            <div>
+              {selectedCard.comments.map((comment)=>(
+                <Comment data={comment}/>
+              ))}
+            </div>
           </div>
           <div className='add-comment-container'>
             <img className='user-profile-image' src={TempImg} alt=''></img>

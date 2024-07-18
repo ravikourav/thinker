@@ -22,7 +22,7 @@ const CardGrid = ({ data }) => {
           {data.map((card, index) => (
             <Card
               key={index}
-              size='small'
+              size='medium'
               margin={true}
               content={card.content}
               textColor={card.contentColor}

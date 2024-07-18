@@ -84,8 +84,13 @@
 /* comment section css */
 
 .comment-container {
-  flex-grow: 1;
-  overflow: auto;
+  height: 420px;
+  overflow-y: scroll;
+}
+
+.comment-header {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 /* comment input css */
