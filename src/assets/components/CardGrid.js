@@ -23,6 +23,7 @@ const CardGrid = ({ data }) => {
             <Card
               key={index}
               size='small'
+              margin={true}
               content={card.content}
               textColor={card.contentColor}
               author={card.author}

@@ -3,120 +3,287 @@
         "content": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
         "author": "Nelson Mandela",
         "contentColor": "#ffffff",
-        "background": "https://picsum.photos/id/101/200/300"
+        "background": "https://picsum.photos/id/101/200/300",
+        "comments": [
+            {
+                "username": "JohnDoe",
+                "comment": "This quote is truly inspiring! It reminds me to never give up.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Absolutely! Resilience is key."
+                    }
+                ]
+            },
+            {
+                "username": "JaneSmith",
+                "comment": "Every time I read this, I feel motivated to face my challenges.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Glad you found it motivating!"
+                    }
+                ]
+            },
+            {
+                "username": "MarkJones",
+                "comment": "Nelson Mandela's words always touch my heart.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Nelson Mandela's legacy lives on through his words."
+                    }
+                ]
+            },
+            {
+                "username": "LucyLiu",
+                "comment": "Such a powerful message about resilience.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Indeed, resilience can help us overcome any obstacle."
+                    }
+                ]
+            },
+            {
+                "username": "EmilyClark",
+                "comment": "I needed this today. Thank you for sharing!",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Happy to hear it was helpful!"
+                    }
+                ]
+            },
+            {
+                "username": "TomWright",
+                "comment": "Every fall is just a setup for a bigger comeback.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Exactly! A fall is just a temporary setback."
+                    }
+                ]
+            }
+        ]
     },
     {
         "content": "The way to get started is to quit talking and begin doing.",
         "author": "Walt Disney",
         "contentColor": "#ffffff",
-        "background": "https://picsum.photos/id/102/200/300"
+        "background": "https://picsum.photos/id/102/200/300",
+        "comments": [
+            {
+                "username": "AliceBrown",
+                "comment": "This is the kick I needed to start my project.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Walt Disney always knows how to inspire action!"
+                    }
+                ]
+            },
+            {
+                "username": "RobertGreen",
+                "comment": "Talk less, do more. Simple yet effective advice.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Indeed! It's all about taking that first step."
+                    }
+                ]
+            },
+            {
+                "username": "NancyWhite",
+                "comment": "I should really stop procrastinating and get to work.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Procrastination is a tough habit to break, but this quote helps!"
+                    }
+                ]
+            },
+            {
+                "username": "SteveBlack",
+                "comment": "Walt Disney had such a practical approach to achieving dreams.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Yes, his advice is timeless and applicable to any goal."
+                    }
+                ]
+            },
+            {
+                "username": "HelenGray",
+                "comment": "This quote really resonates with me, especially now.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Glad it resonates! Sometimes, we just need a little push."
+                    }
+                ]
+            }
+        ]
     },
     {
         "content": "Your time is limited, don't waste it living someone else's life.",
         "author": "Steve Jobs",
         "contentColor": "#ffffff",
-        "background": "https://picsum.photos/id/103/200/300"
+        "background": "https://picsum.photos/id/103/200/300",
+        "comments": [
+            {
+                "username": "JamesBond",
+                "comment": "A great reminder to stay true to oneself.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Absolutely, authenticity is crucial!"
+                    }
+                ]
+            },
+            {
+                "username": "SarahConnor",
+                "comment": "Steve Jobs always had a way of getting straight to the point.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Yes, his wisdom is both profound and straightforward."
+                    }
+                ]
+            },
+            {
+                "username": "HarryPotter",
+                "comment": "Living someone else's life is a surefire way to unhappiness.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "True, we must live for ourselves and our own goals."
+                    }
+                ]
+            },
+            {
+                "username": "FrodoBaggins",
+                "comment": "This quote gives me courage to follow my own path.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Great to hear! Following your own path is the best way to find fulfillment."
+                    }
+                ]
+            }
+        ]
+    }, {
+        "content": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+        "author": "Nelson Mandela",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/101/200/300",
+        "comments": [
+            {
+                "username": "JohnDoe",
+                "comment": "This quote is truly inspiring! It reminds me to never give up.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Absolutely! Resilience is key."
+                    },
+                    {
+                        "username": "JaneSmith",
+                        "reply": "Yes, it's a powerful reminder!"
+                    }
+                ]
+            },
+            {
+                "username": "JaneSmith",
+                "comment": "Every time I read this, I feel motivated to face my challenges.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Glad you found it motivating!"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "content": "The way to get started is to quit talking and begin doing.",
+        "author": "Walt Disney",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/102/200/300",
+        "comments": [
+            {
+                "username": "AliceBrown",
+                "comment": "This is the kick I needed to start my project.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Walt Disney always knows how to inspire action!"
+                    }
+                ]
+            },
+            {
+                "username": "RobertGreen",
+                "comment": "Talk less, do more. Simple yet effective advice.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Indeed! It's all about taking that first step."
+                    },
+                    {
+                        "username": "NancyWhite",
+                        "reply": "I should really stop procrastinating and get to work."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "content": "Your time is limited, don't waste it living someone else's life.",
+        "author": "Steve Jobs",
+        "contentColor": "#ffffff",
+        "background": "https://picsum.photos/id/103/200/300",
+        "comments": [
+            {
+                "username": "JamesBond",
+                "comment": "A great reminder to stay true to oneself.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Absolutely, authenticity is crucial!"
+                    },
+                    {
+                        "username": "SarahConnor",
+                        "reply": "Steve Jobs always had a way of getting straight to the point."
+                    }
+                ]
+            }
+        ]
     },
     {
         "content": "If life were predictable it would cease to be life, and be without flavor.",
         "author": "Eleanor Roosevelt",
         "contentColor": "#ffffff",
-        "background": "https://picsum.photos/id/104/200/300"
-    },
-    {
-        "content": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-        "author": "Winston Churchill",
-        "contentColor": "#ffffff",
-        "background": "https://picsum.photos/id/121/200/300"
-    },
-    {
-        "content": "In the end, it's not the years in your life that count. It's the life in your years.",
-        "author": "Abraham Lincoln",
-        "contentColor": "#ffffff",
-        "background": "https://picsum.photos/id/106/200/300"
-    },
-    {
-        "content": "Believe you can and you're halfway there.",
-        "author": "Theodore Roosevelt",
-        "contentColor": "#ffffff",
-        "background": "https://picsum.photos/id/107/200/300"
-    },
-    {
-        "content": "You miss 100% of the shots you don't take.",
-        "author": "Wayne Gretzky",
-        "contentColor": "#ffffff",
-        "background": "https://picsum.photos/id/108/200/300"
-    },
-    {
-        "content": "It does not matter how slowly you go as long as you do not stop.",
-        "author": "Confucius",
-        "contentColor": "#ffffff",
-        "background": "https://picsum.photos/id/109/200/300"
-    },
-    {
-        "content": "The only way to do great work is to love what you do.",
-        "author": "Steve Jobs",
-        "contentColor": "#ffffff",
-        "background": "https://picsum.photos/id/110/200/300"
-    },
-    {
-        "content": "If you can dream it, you can achieve it.",
-        "author": "Zig Ziglar",
-        "contentColor": "#ffffff",
-        "background": "https://picsum.photos/id/111/200/300"
-    },
-    {
-        "content": "It always seems impossible until it's done.",
-        "author": "Nelson Mandela",
-        "contentColor": "#ffffff",
-        "background": "https://picsum.photos/id/112/200/300"
-    },
-    {
-        "content": "The best revenge is massive success.",
-        "author": "Frank Sinatra",
-        "contentColor": "#ffffff",
-        "background": "https://picsum.photos/id/113/200/300"
-    },
-    {
-        "content": "Life is what happens when you're busy making other plans.",
-        "author": "John Lennon",
-        "contentColor": "#ffffff",
-        "background": "https://picsum.photos/id/114/200/300"
-    },
-    {
-        "content": "Strive not to be a success, but rather to be of value.",
-        "author": "Albert Einstein",
-        "contentColor": "#ffffff",
-        "background": "https://picsum.photos/id/115/200/300"
-    },
-    {
-        "content": "The mind is everything. What you think you become.",
-        "author": "Buddha",
-        "contentColor": "#ffffff",
-        "background": "https://picsum.photos/id/116/200/300"
-    },
-    {
-        "content": "The only limit to our realization of tomorrow will be our doubts of today.",
-        "author": "Franklin D. Roosevelt",
-        "contentColor": "#ffffff",
-        "background": "https://picsum.photos/id/117/200/300"
-    },
-    {
-        "content": "Keep your face always toward the sunshine - and shadows will fall behind you.",
-        "author": "Walt Whitman",
-        "contentColor": "#ffffff",
-        "background": "https://picsum.photos/id/118/200/300"
-    },
-    {
-        "content": "You are never too old to set another goal or to dream a new dream.",
-        "author": "C.S. Lewis",
-        "contentColor": "#ffffff",
-        "background": "https://picsum.photos/id/119/200/300"
-    },
-    {
-        "content": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
-        "author": "Zig Ziglar",
-        "contentColor": "#ffffff",
-        "background": "https://picsum.photos/id/120/200/300"
+        "background": "https://picsum.photos/id/104/200/300",
+        "comments": [
+            {
+                "username": "TomWright",
+                "comment": "This quote is a great reminder to embrace uncertainty.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Absolutely, unpredictability makes life interesting!"
+                    }
+                ]
+            },
+            {
+                "username": "EmilyClark",
+                "comment": "Eleanor Roosevelt's quotes are always so insightful.",
+                "replies": [
+                    {
+                        "username": "Admin",
+                        "reply": "Yes, her wisdom is timeless."
+                    }
+                ]
+            }
+        ]
     }
 ]

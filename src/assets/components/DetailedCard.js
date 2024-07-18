@@ -31,6 +31,7 @@ function DetailedCard({ selectedCard, onClose }) {
       <div className='content-wraper'>
         <Card 
           size='large'
+          margin={false}
           content={selectedCard.content}
           textColor={selectedCard.contentColor}
           author={selectedCard.author}
