@@ -1,6 +1,8 @@
 import React, { useState , useEffect} from 'react';
 import './css/Login.css';
 import {ReactComponent as CloseImg} from '../image/close.svg';
+
+
 function Login({ isVisible, onClose , accountStaus }) {
 
   const [hasAccount, setHasAccount] = useState(accountStaus);

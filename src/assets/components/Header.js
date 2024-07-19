@@ -5,12 +5,15 @@ import Login from './Login';
 import { Link , useLocation } from 'react-router-dom';
 
 import {HiMiniBell} from "react-icons/hi2";
+import NotificationPanel from './NotificationPanel.js';
 
 function Header()  {
   const location = useLocation();
   const [Selected , setSelected] = useState(location);
   const [isLoggedIn] = useState(true);
   const [isLoginOverlayVisible, setIsLoginOverlayVisible] = useState(false);
+
+  const [notificationOvarlayVisible , setNotificationOverlayVisible] = useState(false);
 
   useEffect(() => {
     const path = location.pathname.substring(1) || 'Home';
@@ -45,7 +48,7 @@ function Header()  {
         <div className="header-user-container">
           {isLoggedIn ? (
             <div className='left-nav-links'>
-              <HiMiniBell className='icon' />
+              <HiMiniBell className='icon' onClick={()=>{setNotificationOverlayVisible(!notificationOvarlayVisible)}} />
               <Link to='profile' onClick={()=>{select('Profile')}} >
                 <img className= 'profile-picture' src={placeholder} alt="User" />
               </Link>
@@ -57,6 +60,8 @@ function Header()  {
           )}
         </div>
       </div>
+      
+      {notificationOvarlayVisible && <NotificationPanel /> }
 
       <Login
           isVisible={isLoginOverlayVisible}
