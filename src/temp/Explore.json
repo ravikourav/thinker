@@ -1,127 +1,52 @@
 [
     {
         "name": "Nature",
-        "background": "https://picsum.photos/id/237/200/300",
-        "slogan": "Experience the beauty of the earth",
-        "cards": [
-            {
-                "content": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-                "author": "Nelson Mandela",
-                "contentColor": "#ffffff",
-                "background": "https://picsum.photos/id/131/200/300"
-            },
-            {
-                "content": "In every walk with nature one receives far more than he seeks.",
-                "author": "John Muir",
-                "contentColor": "#ffffff",
-                "background": "https://picsum.photos/id/132/200/300"
-            },
-            {
-                "content": "Look deep into nature, and then you will understand everything better.",
-                "author": "Albert Einstein",
-                "contentColor": "#ffffff",
-                "background": "https://picsum.photos/id/133/200/300"
-            },
-            {
-                "content": "Nature always wears the colors of the spirit.",
-                "author": "Ralph Waldo Emerson",
-                "contentColor": "#ffffff",
-                "background": "https://picsum.photos/id/134/200/300"
-            }
-        ]
+        "background": "https://picsum.photos/id/227/200/300",
+        "slogan": "Experience the beauty of the earth"
     },
     {
         "name": "Technology",
         "background": "https://picsum.photos/id/436/200/300",
-        "slogan": "Embrace the future",
-        "cards": [
-            {
-                "content": "The way to get started is to quit talking and begin doing.",
-                "author": "Walt Disney",
-                "contentColor": "#ffffff",
-                "background": "https://picsum.photos/id/145/200/300"
-            },
-            {
-                "content": "Technology is anything that wasn’t around when you were born.",
-                "author": "Alan Kay",
-                "contentColor": "#ffffff",
-                "background": "https://picsum.photos/id/146/200/300"
-            },
-            {
-                "content": "The advance of technology is based on making it fit in so that you don't really even notice it, so it's part of everyday life.",
-                "author": "Bill Gates",
-                "contentColor": "#ffffff",
-                "background": "https://picsum.photos/id/147/200/300"
-            },
-            {
-                "content": "The technology you use impresses no one. The experience you create with it is everything.",
-                "author": "Sean Gerety",
-                "contentColor": "#ffffff",
-                "background": "https://picsum.photos/id/129/200/300"
-            }
-        ]
+        "slogan": "Embrace the future"
     },
     {
         "name": "Travel",
-        "background": "https://picsum.photos/id/25/200/300",
-        "slogan": "Discover new horizons",
-        "cards": [
-            {
-                "content": "Your time is limited, don't waste it living someone else's life.",
-                "author": "Steve Jobs",
-                "contentColor": "#ffffff",
-                "background": "https://picsum.photos/id/159/200/300"
-            },
-            {
-                "content": "Travel makes one modest. You see what a tiny place you occupy in the world.",
-                "author": "Gustave Flaubert",
-                "contentColor": "#ffffff",
-                "background": "https://picsum.photos/id/140/200/300"
-            },
-            {
-                "content": "The world is a book, and those who do not travel read only one page.",
-                "author": "Saint Augustine",
-                "contentColor": "#ffffff",
-                "background": "https://picsum.photos/id/151/200/300"
-            },
-            {
-                "content": "A journey of a thousand miles begins with a single step.",
-                "author": "Lao Tzu",
-                "contentColor": "#ffffff",
-                "background": "https://picsum.photos/id/152/200/300"
-            }
-        ]
+        "background": "https://picsum.photos/id/26/200/300",
+        "slogan": "Discover new horizons"
     },
     {
         "name": "Music",
         "background": "https://picsum.photos/id/1084/200/300",
-        "slogan": "Find your rhythm",
-        "cards": [
-            {
-                "content": "Music is the language of the spirit. It opens the secret of life bringing peace, abolishing strife.",
-                "author": "Kahlil Gibran",
-                "contentColor": "#ffffff",
-                "background": "https://picsum.photos/id/153/200/300"
-            },
-            {
-                "content": "Music can change the world because it can change people.",
-                "author": "Bono",
-                "contentColor": "#ffffff",
-                "background": "https://picsum.photos/id/154/200/300"
-            },
-            {
-                "content": "Without music, life would be a mistake.",
-                "author": "Friedrich Nietzsche",
-                "contentColor": "#ffffff",
-                "background": "https://picsum.photos/id/155/200/300"
-            },
-            {
-                "content": "Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything.",
-                "author": "Plato",
-                "contentColor": "#ffffff",
-                "background": "https://picsum.photos/id/156/200/300"
-            }
-        ]
+        "slogan": "Find your rhythm"
+    },{
+        "name": "Art",
+        "background": "https://picsum.photos/id/1018/200/300",
+        "slogan": "Unleash your creativity"
+    },
+    {
+        "name": "Food",
+        "background": "https://picsum.photos/id/331/200/300",
+        "slogan": "Savor every moment"
+    },
+    {
+        "name": "Fitness",
+        "background": "https://picsum.photos/id/181/200/300",
+        "slogan": "Achieve your goals"
+    },
+    {
+        "name": "Books",
+        "background": "https://picsum.photos/id/1063/200/300",
+        "slogan": "Dive into new worlds"
+    },
+    {
+        "name": "Movies",
+        "background": "https://picsum.photos/id/302/200/300",
+        "slogan": "Experience the magic of cinema"
+    },
+    {
+        "name": "Science",
+        "background": "https://picsum.photos/id/958/200/300",
+        "slogan": "Explore the unknown"
     }
-  ]
+]
   

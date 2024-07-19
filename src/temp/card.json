@@ -1,5 +1,8 @@
 [
     {
+        "title": "",
+        "category": "Quote",
+        "tags": ["inspiration", "resilience"],
         "content": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
         "author": "Nelson Mandela",
         "contentColor": "#ffffff",
@@ -8,66 +11,51 @@
             {
                 "username": "JohnDoe",
                 "comment": "This quote is truly inspiring! It reminds me to never give up.",
+                "likes": 100,
+                "date": "2023-07-19T14:48:00.000Z",
                 "replies": [
                     {
                         "username": "Admin",
-                        "reply": "Absolutely! Resilience is key."
+                        "reply": "Absolutely! Resilience is key.",
+                        "likes": 100,
+                        "date": "2023-07-20T14:48:00.000Z"
                     }
                 ]
             },
             {
                 "username": "JaneSmith",
                 "comment": "Every time I read this, I feel motivated to face my challenges.",
+                "likes": 50,
+                "date": "2023-07-20T14:48:00.000Z",
                 "replies": [
                     {
                         "username": "Admin",
-                        "reply": "Glad you found it motivating!"
+                        "reply": "Glad you found it motivating!",
+                        "likes": 50,
+                        "date": "2023-07-21T14:48:00.000Z"
                     }
                 ]
             },
             {
                 "username": "MarkJones",
                 "comment": "Nelson Mandela's words always touch my heart.",
+                "likes": 75,
+                "date": "2023-07-21T14:48:00.000Z",
                 "replies": [
                     {
                         "username": "Admin",
-                        "reply": "Nelson Mandela's legacy lives on through his words."
-                    }
-                ]
-            },
-            {
-                "username": "LucyLiu",
-                "comment": "Such a powerful message about resilience.",
-                "replies": [
-                    {
-                        "username": "Admin",
-                        "reply": "Indeed, resilience can help us overcome any obstacle."
-                    }
-                ]
-            },
-            {
-                "username": "EmilyClark",
-                "comment": "I needed this today. Thank you for sharing!",
-                "replies": [
-                    {
-                        "username": "Admin",
-                        "reply": "Happy to hear it was helpful!"
-                    }
-                ]
-            },
-            {
-                "username": "TomWright",
-                "comment": "Every fall is just a setup for a bigger comeback.",
-                "replies": [
-                    {
-                        "username": "Admin",
-                        "reply": "Exactly! A fall is just a temporary setback."
+                        "reply": "Nelson Mandela's legacy lives on through his words.",
+                        "likes": 75,
+                        "date": "2023-07-22T14:48:00.000Z"
                     }
                 ]
             }
         ]
     },
     {
+        "title": "",
+        "category": "Quote",
+        "tags": ["motivation", "action"],
         "content": "The way to get started is to quit talking and begin doing.",
         "author": "Walt Disney",
         "contentColor": "#ffffff",
@@ -76,56 +64,51 @@
             {
                 "username": "AliceBrown",
                 "comment": "This is the kick I needed to start my project.",
+                "likes": 80,
+                "date": "2023-07-22T14:48:00.000Z",
                 "replies": [
                     {
                         "username": "Admin",
-                        "reply": "Walt Disney always knows how to inspire action!"
+                        "reply": "Walt Disney always knows how to inspire action!",
+                        "likes": 80,
+                        "date": "2023-07-23T14:48:00.000Z"
                     }
                 ]
             },
             {
                 "username": "RobertGreen",
                 "comment": "Talk less, do more. Simple yet effective advice.",
+                "likes": 90,
+                "date": "2023-07-23T14:48:00.000Z",
                 "replies": [
                     {
                         "username": "Admin",
-                        "reply": "Indeed! It's all about taking that first step."
+                        "reply": "Indeed! It's all about taking that first step.",
+                        "likes": 90,
+                        "date": "2023-07-24T14:48:00.000Z"
                     }
                 ]
             },
             {
                 "username": "NancyWhite",
                 "comment": "I should really stop procrastinating and get to work.",
+                "likes": 60,
+                "date": "2023-07-24T14:48:00.000Z",
                 "replies": [
                     {
                         "username": "Admin",
-                        "reply": "Procrastination is a tough habit to break, but this quote helps!"
-                    }
-                ]
-            },
-            {
-                "username": "SteveBlack",
-                "comment": "Walt Disney had such a practical approach to achieving dreams.",
-                "replies": [
-                    {
-                        "username": "Admin",
-                        "reply": "Yes, his advice is timeless and applicable to any goal."
-                    }
-                ]
-            },
-            {
-                "username": "HelenGray",
-                "comment": "This quote really resonates with me, especially now.",
-                "replies": [
-                    {
-                        "username": "Admin",
-                        "reply": "Glad it resonates! Sometimes, we just need a little push."
+                        "reply": "Procrastination is a tough habit to break, but this quote helps!",
+                        "likes": 60,
+                        "date": "2023-07-25T14:48:00.000Z"
                     }
                 ]
             }
         ]
     },
     {
+        "title": "",
+        "category": "Quote",
+        "tags": ["self-improvement", "authenticity"],
         "content": "Your time is limited, don't waste it living someone else's life.",
         "author": "Steve Jobs",
         "contentColor": "#ffffff",
@@ -134,45 +117,65 @@
             {
                 "username": "JamesBond",
                 "comment": "A great reminder to stay true to oneself.",
+                "likes": 85,
+                "date": "2023-07-25T14:48:00.000Z",
                 "replies": [
                     {
                         "username": "Admin",
-                        "reply": "Absolutely, authenticity is crucial!"
+                        "reply": "Absolutely, authenticity is crucial!",
+                        "likes": 85,
+                        "date": "2023-07-26T14:48:00.000Z"
                     }
                 ]
             },
             {
                 "username": "SarahConnor",
                 "comment": "Steve Jobs always had a way of getting straight to the point.",
+                "likes": 70,
+                "date": "2023-07-26T14:48:00.000Z",
                 "replies": [
                     {
                         "username": "Admin",
-                        "reply": "Yes, his wisdom is both profound and straightforward."
+                        "reply": "Yes, his wisdom is both profound and straightforward.",
+                        "likes": 70,
+                        "date": "2023-07-27T14:48:00.000Z"
                     }
                 ]
             },
             {
                 "username": "HarryPotter",
                 "comment": "Living someone else's life is a surefire way to unhappiness.",
+                "likes": 65,
+                "date": "2023-07-27T14:48:00.000Z",
                 "replies": [
                     {
                         "username": "Admin",
-                        "reply": "True, we must live for ourselves and our own goals."
+                        "reply": "True, we must live for ourselves and our own goals.",
+                        "likes": 65,
+                        "date": "2023-07-28T14:48:00.000Z"
                     }
                 ]
             },
             {
                 "username": "FrodoBaggins",
                 "comment": "This quote gives me courage to follow my own path.",
+                "likes": 95,
+                "date": "2023-07-28T14:48:00.000Z",
                 "replies": [
                     {
                         "username": "Admin",
-                        "reply": "Great to hear! Following your own path is the best way to find fulfillment."
+                        "reply": "Great to hear! Following your own path is the best way to find fulfillment.",
+                        "likes": 95,
+                        "date": "2023-07-29T14:48:00.000Z"
                     }
                 ]
             }
         ]
-    }, {
+    },
+    {
+        "title": "",
+        "category": "Quote",
+        "tags": ["inspiration", "resilience"],
         "content": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
         "author": "Nelson Mandela",
         "contentColor": "#ffffff",
@@ -181,30 +184,43 @@
             {
                 "username": "JohnDoe",
                 "comment": "This quote is truly inspiring! It reminds me to never give up.",
+                "likes": 120,
+                "date": "2023-07-19T14:48:00.000Z",
                 "replies": [
                     {
                         "username": "Admin",
-                        "reply": "Absolutely! Resilience is key."
+                        "reply": "Absolutely! Resilience is key.",
+                        "likes": 120,
+                        "date": "2023-07-20T14:48:00.000Z"
                     },
                     {
                         "username": "JaneSmith",
-                        "reply": "Yes, it's a powerful reminder!"
+                        "reply": "Yes, it's a powerful reminder!",
+                        "likes": 30,
+                        "date": "2023-07-21T14:48:00.000Z"
                     }
                 ]
             },
             {
                 "username": "JaneSmith",
                 "comment": "Every time I read this, I feel motivated to face my challenges.",
+                "likes": 75,
+                "date": "2023-07-20T14:48:00.000Z",
                 "replies": [
                     {
                         "username": "Admin",
-                        "reply": "Glad you found it motivating!"
+                        "reply": "Glad you found it motivating!",
+                        "likes": 75,
+                        "date": "2023-07-21T14:48:00.000Z"
                     }
                 ]
             }
         ]
     },
     {
+        "title": "",
+        "category": "Quote",
+        "tags": ["motivation", "action"],
         "content": "The way to get started is to quit talking and begin doing.",
         "author": "Walt Disney",
         "contentColor": "#ffffff",
@@ -213,30 +229,43 @@
             {
                 "username": "AliceBrown",
                 "comment": "This is the kick I needed to start my project.",
+                "likes": 95,
+                "date": "2023-07-22T14:48:00.000Z",
                 "replies": [
                     {
                         "username": "Admin",
-                        "reply": "Walt Disney always knows how to inspire action!"
+                        "reply": "Walt Disney always knows how to inspire action!",
+                        "likes": 95,
+                        "date": "2023-07-23T14:48:00.000Z"
                     }
                 ]
             },
             {
                 "username": "RobertGreen",
                 "comment": "Talk less, do more. Simple yet effective advice.",
+                "likes": 80,
+                "date": "2023-07-23T14:48:00.000Z",
                 "replies": [
                     {
                         "username": "Admin",
-                        "reply": "Indeed! It's all about taking that first step."
+                        "reply": "Indeed! It's all about taking that first step.",
+                        "likes": 80,
+                        "date": "2023-07-24T14:48:00.000Z"
                     },
                     {
                         "username": "NancyWhite",
-                        "reply": "I should really stop procrastinating and get to work."
+                        "reply": "I should really stop procrastinating and get to work.",
+                        "likes": 45,
+                        "date": "2023-07-25T14:48:00.000Z"
                     }
                 ]
             }
         ]
     },
     {
+        "title": "",
+        "category": "Quote",
+        "tags": ["self-improvement", "authenticity"],
         "content": "Your time is limited, don't waste it living someone else's life.",
         "author": "Steve Jobs",
         "contentColor": "#ffffff",
@@ -245,20 +274,29 @@
             {
                 "username": "JamesBond",
                 "comment": "A great reminder to stay true to oneself.",
+                "likes": 85,
+                "date": "2023-07-25T14:48:00.000Z",
                 "replies": [
                     {
                         "username": "Admin",
-                        "reply": "Absolutely, authenticity is crucial!"
+                        "reply": "Absolutely, authenticity is crucial!",
+                        "likes": 85,
+                        "date": "2023-07-26T14:48:00.000Z"
                     },
                     {
                         "username": "SarahConnor",
-                        "reply": "Steve Jobs always had a way of getting straight to the point."
+                        "reply": "Steve Jobs always had a way of getting straight to the point.",
+                        "likes": 40,
+                        "date": "2023-07-27T14:48:00.000Z"
                     }
                 ]
             }
         ]
     },
     {
+        "title": "",
+        "category": "Thought",
+        "tags": ["embrace", "uncertainty"],
         "content": "If life were predictable it would cease to be life, and be without flavor.",
         "author": "Eleanor Roosevelt",
         "contentColor": "#ffffff",
@@ -267,20 +305,28 @@
             {
                 "username": "TomWright",
                 "comment": "This quote is a great reminder to embrace uncertainty.",
+                "likes": 70,
+                "date": "2023-07-29T14:48:00.000Z",
                 "replies": [
                     {
                         "username": "Admin",
-                        "reply": "Absolutely, unpredictability makes life interesting!"
+                        "reply": "Absolutely, unpredictability makes life interesting!",
+                        "likes": 70,
+                        "date": "2023-07-30T14:48:00.000Z"
                     }
                 ]
             },
             {
                 "username": "EmilyClark",
                 "comment": "Eleanor Roosevelt's quotes are always so insightful.",
+                "likes": 65,
+                "date": "2023-07-30T14:48:00.000Z",
                 "replies": [
                     {
                         "username": "Admin",
-                        "reply": "Yes, her wisdom is timeless."
+                        "reply": "Yes, her wisdom is timeless.",
+                        "likes": 65,
+                        "date": "2023-07-31T14:48:00.000Z"
                     }
                 ]
             }

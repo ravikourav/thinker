@@ -52,7 +52,7 @@ function DetailedCard({ selectedCard, onClose }) {
           </div>
           <div className='comment-container'>
             <p className='comment-header'>Comments</p>
-            <div>
+            <div style={{marginBottom: '10px'}}>
               {selectedCard.comments.map((comment)=>(
                 <Comment data={comment}/>
               ))}

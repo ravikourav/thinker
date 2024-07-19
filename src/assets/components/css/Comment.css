@@ -8,7 +8,6 @@
 .main-comment {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
 }
 
 .comment-profile-picture {
@@ -20,20 +19,11 @@
     margin-left: 15px;
     width: 350px;
 }
-.comment-reply-body {
-    margin-left: 15px;
-    width: 250px;
-}
-
-.margin-left-15 {
-    margin-left: 15px;
-}
 
 .row {
     display: flex;
     flex-direction: row;
 }
-
 .comment-username {
     text-align: left;
     font-size: 0.8rem;
@@ -58,6 +48,7 @@
     font-weight: 600;
     color: #767676;
 }
+
 .like-container{
     margin-left: 15px;
 }
@@ -74,13 +65,28 @@
     color: #767676;
 }
 
+/* Reply css */
+
+.view-reply-button {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #767676;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
 .reply-container {
     display: flex;
-    width: 60%;
-    margin-top: 25px;
+    width: 70%;
+    margin: 20px 0px 30px 0px;
 }
 
 .reply-profile-picture {
     width: 30px;
     height: 30px;
+}
+
+.comment-reply-body {
+    margin-left: 15px;
+    width: 300px;
 }

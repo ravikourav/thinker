@@ -1,5 +1,4 @@
-// src/utils.js
-export function adjustColorBrightness(color, amount) {
+export default function adjustColorBrightness(color, amount) {
   if (!color || typeof color !== 'string' || (color[0] !== '#' && color.length !== 6)) {
     console.error('Invalid color value:', color);
     return '#000000'; // Return a default color or handle it as needed
@@ -15,9 +14,9 @@ export function adjustColorBrightness(color, amount) {
 
   // Parse the hex color to its RGB components
   const num = parseInt(color, 16);
-  let r = (num >> 16) + amount;
-  let g = ((num >> 8) & 0x00FF) + amount;
-  let b = (num & 0x0000FF) + amount;
+  let r = (num >> 16) - amount;
+  let g = ((num >> 8) & 0x00FF) - amount;
+  let b = (num & 0x0000FF) - amount;
 
   // Ensure RGB values are within the valid range [0, 255]
   r = Math.min(255, Math.max(0, r));
