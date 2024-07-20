@@ -1,13 +1,21 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import './css/DetailedCard.css';
 import Card from './Card.js';
 
 import { ReactComponent as BackIcon } from '../image/arrow-back.svg';
 import { ReactComponent as SendIcon } from '../image/send.svg';
+import { ReactComponent as DropDownIcon } from '../image/dropdown.svg';
+import { ReactComponent as LikeIcon } from '../image/like.svg';
+import { ReactComponent as ShareIcon } from '../image/share.svg';
+import { ReactComponent as CopyIcon } from '../image/copy.svg';
+import { ReactComponent as PlayIcon } from '../image/play.svg';
+
 import TempImg from '../image/profile.png';
 import Comment from './Comment.js';
 
 function DetailedCard({ selectedCard, onClose }) {
+
+  const [hideComment , setHideComment] = useState(false);
 
   const handleTextToSpeech = (text) => {
     if ('speechSynthesis' in window) {
@@ -19,11 +27,9 @@ function DetailedCard({ selectedCard, onClose }) {
     }
   };
 
-  useEffect(() => {
-    if (selectedCard && selectedCard.content) {
-      handleTextToSpeech(selectedCard.author + ' said. ' + selectedCard.content);
-    }
-  },[selectedCard]);
+  function speak(){
+    handleTextToSpeech(selectedCard.author + ' said. ' + selectedCard.content);
+  }
 
   return (
     <div className="modal-wraper">
@@ -38,7 +44,6 @@ function DetailedCard({ selectedCard, onClose }) {
           author={selectedCard.author}
           background={selectedCard.background}
         />
-
         <div className="modal-box">
           <div className='post-owner-container'>
             <div className='flex-row'>
@@ -51,9 +56,12 @@ function DetailedCard({ selectedCard, onClose }) {
             <p className='main-button'>Follow</p>
           </div>
           <div className='comment-container'>
-            <p className='comment-header'>Comments</p>
+            <div className='flex-row commnet-title-container' onClick={()=>{setHideComment(!hideComment)}}>
+              <p className='comment-header'>Comments</p>
+              <DropDownIcon className='icon'>V</DropDownIcon>
+            </div>
             <div style={{marginBottom: '10px'}}>
-              {selectedCard.comments.map((comment)=>(
+              {hideComment && selectedCard.comments.map((comment)=>(
                 <Comment data={comment}/>
               ))}
             </div>
@@ -64,6 +72,12 @@ function DetailedCard({ selectedCard, onClose }) {
             <SendIcon className='send-comment' />
           </div>
         </div>
+      </div>
+      <div className='post-controle'>
+        <CopyIcon className='post-icon'></CopyIcon>
+        <PlayIcon className='post-icon' onClick={speak}></PlayIcon>
+        <LikeIcon fill='white' stroke='black' className='post-icon'></LikeIcon>
+        <ShareIcon className='post-icon'></ShareIcon>
       </div>
     </div>
   );
