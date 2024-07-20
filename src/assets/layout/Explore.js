@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ExploreCard from '../components/ExploreCard';
 import CardGrid from '../components/CardGrid.js';
 import { ReactComponent as BackImg } from '../image/arrow-back.svg';
+import { ReactComponent as SearchIcon } from '../image/search.svg';
 import './css/Explore.css';
 
 import { useIsMobile } from '../utils/screenSize.js';
@@ -25,9 +26,12 @@ function Explore() {
 
   return (
     <div className='explore-page-layout'>
-      {isMobile && 
-        <div className="explore-search-container">
-          <input type="text" placeholder="Search" className="main-input search-input" />
+      {isMobile && !selectedCard &&
+        <div className="explore-search-header">
+          <div className='custom-search-box'>
+            <SearchIcon className='search-icon'/>
+            <input type="text" placeholder="Search" className="mobile-search-input " />
+          </div>
         </div>
       }
       <div className='card-layout'>

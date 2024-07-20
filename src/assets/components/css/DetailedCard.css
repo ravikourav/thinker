@@ -181,14 +181,20 @@
     left: 10px;
     height: 30px;
     width: 30px;
+    background-color: #eeeeee;
   }
 }
 
 @media (max-width: 418px){
-  .content-wraper {
-    border-radius: 30px;
+  .close {
+    top: 10px;
+    left: 5px;
+    height: 30px;
+    width: 30px;
+    background-color: #eeeeee;
   }
-  .modal-box {
-    width: 100vw;
+
+  .content-wraper {
+    border-radius: 0px 0px 30px 30px;
   }
 }
