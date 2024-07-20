@@ -4,7 +4,7 @@ import './css/Notification.css';
 
 import notificationData from '../../temp/notification.json'
 
-function NotificationPanel() {
+function NotificationModel() {
   return (
     <div className='notification-modle'>
         <div className='notification-header'>
@@ -12,11 +12,11 @@ function NotificationPanel() {
         </div>
         <div className='notification-body'>
             {notificationData.map((data)=>(
-                <NotificationTemplate data={data} />
+              <NotificationTemplate data={data} />
             ))}
         </div>
     </div>
   )
 }
 
-export default NotificationPanel;
+export default NotificationModel;

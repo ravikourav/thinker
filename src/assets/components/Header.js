@@ -4,8 +4,14 @@ import placeholder from '../image/profile.png';
 import Login from './Login';
 import { Link , useLocation } from 'react-router-dom';
 
-import {HiMiniBell} from "react-icons/hi2";
-import NotificationPanel from './NotificationPanel.js';
+import { useMediaQuery } from 'react-responsive';
+
+import { ReactComponent as HomeIcon } from '../image/home.svg';
+import { ReactComponent as AddIcon} from '../image/add.svg';
+import { ReactComponent as CategoryIcon} from '../image/category.svg';
+import { ReactComponent as BellIcon} from '../image/bell.svg';
+
+import NotificationModel from './NotificationModel.js';
 
 function Header()  {
   const location = useLocation();
@@ -13,7 +19,9 @@ function Header()  {
   const [isLoggedIn] = useState(true);
   const [isLoginOverlayVisible, setIsLoginOverlayVisible] = useState(false);
 
-  const [notificationOvarlayVisible , setNotificationOverlayVisible] = useState(false);
+  const [notifOvarlayVisible , setNotifOverlayVisible] = useState(false);
+
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
   useEffect(() => {
     const path = location.pathname.substring(1) || 'Home';
@@ -33,7 +41,8 @@ function Header()  {
   };
 
   return (
-    <div>
+    <div className='header-root' >
+      {!isMobile ? (
       <div className="header-container">
         <img className="logo" src="/logo192.png" alt="Logo" />
         <div className="nav-links">
@@ -48,7 +57,7 @@ function Header()  {
         <div className="header-user-container">
           {isLoggedIn ? (
             <div className='left-nav-links'>
-              <HiMiniBell className='icon' onClick={()=>{setNotificationOverlayVisible(!notificationOvarlayVisible)}} />
+              <BellIcon fill={notifOvarlayVisible ? 'black' : 'white'} stroke={notifOvarlayVisible ? 'white' :'#767676' } className='icon' onClick={()=>{setNotifOverlayVisible(!notifOvarlayVisible)}} />
               <Link to='profile' onClick={()=>{select('Profile')}} >
                 <img className= 'profile-picture' src={placeholder} alt="User" />
               </Link>
@@ -60,14 +69,51 @@ function Header()  {
           )}
         </div>
       </div>
-      
-      {notificationOvarlayVisible && <NotificationPanel /> }
+      ):(
+        <>
+        <div className="header-container">
+            <Link to="/" onClick={()=>{select('Home')}}>
+              <HomeIcon fill={ Selected === 'Home' ? 
+                'black' : 'white' } stroke={Selected === 'Home' ? 
+                'white' : '#767676'} className='nav-icon' />
+            </Link>
+            <Link to="explore" onClick={()=>{select('Explore')}}>
+              <CategoryIcon fill={ Selected === 'Explore' ? 
+                'black' : 'white' } stroke={Selected === 'Explore' ? 
+                'white' : '#767676'} className='nav-icon' />
+            </Link>
+            { isLoggedIn && (
+              <Link to="create" onClick={()=>{select('Create')}}>
+                <AddIcon fill={ Selected === 'Create' ? 
+                'black' : 'white' } stroke={Selected === 'Create' ? 
+                'white' : '#767676'} className='nav-icon' />
+              </Link>
+            )}
+            {isLoggedIn ? (
+            <>
+              <Link to='notification' onClick={()=>{select('Create')}}>
+                <BellIcon fill={notifOvarlayVisible ? 'black' : 'white'} stroke={notifOvarlayVisible ? 'white' :'#767676' } className='nav-icon'/>
+              </Link>
+              <Link to='profile' onClick={()=>{select('Profile')}} >
+                <img className= 'nav-icon' src={placeholder} alt="User" />
+              </Link>
+            </>
+            ) : (
+            <>
+              <p className="main-button" onClick={openLogin} >Login</p>
+            </>
+            )}
+        </div>
+      </>
+      )}    
 
+      {isMobile && notifOvarlayVisible && <NotificationModel />}
+      
       <Login
-          isVisible={isLoginOverlayVisible}
-          onClose={closeLogin}
-          accountStaus={false}
-        />
+        isVisible={isLoginOverlayVisible}
+        onClose={closeLogin}
+        accountStaus={false}
+      />
     
     </div>
   );

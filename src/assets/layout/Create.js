@@ -61,7 +61,7 @@ function Create() {
             Author:
             <input className='main-input input-create' type='text' placeholder='Author' />
           </label>
-          <div className='category-color-container'>
+          <div className='category-color-container color-container'>
             <label>
               Category:
               <select className='main-input category-input'>
@@ -83,7 +83,7 @@ function Create() {
 
             <label>
               Text color on Img :
-              <div className='category-color-container'>
+              <div className='color-container'>
                 <div className='main-input preview-color' style={{ backgroundColor: contentColor }}></div>
                 <p onClick={handleColorPickerClick} className='main-button button'>{displayColorPicker? 'Apply' : 'Select'}</p>
               </div>

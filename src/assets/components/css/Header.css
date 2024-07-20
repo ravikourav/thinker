@@ -1,9 +1,16 @@
+.header-root {
+  margin: 0;
+  padding: 0;
+}
+
 .header-container {
+  position: fixed;
+  width: 100%;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px;
+  padding: 10px;
   z-index: 1000;
 }
 
@@ -72,4 +79,22 @@ a {
 .left-nav-links {
   align-items: center;
   width: 108px;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    bottom: -10px;
+    justify-content: space-around;
+    flex: 1;
+  }
+  .nav-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media(min-width: 769px) {
+  .header-container {
+    top: 0;
+  }
 }

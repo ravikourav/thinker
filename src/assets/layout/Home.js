@@ -11,7 +11,7 @@ function Home() {
   }, []);
 
   return (
-    <div className='full-page-layout'>
+    <div className='home-page-layout'>
       <CardGrid data={data} />
     </div>
   );

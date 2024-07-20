@@ -3,7 +3,7 @@
     font-weight: 600;
     text-decoration: underline;
     text-align: left;
-    margin: 25px 0px 10px 25px;
+    margin: 75px 0px 10px 25px;
 }
 
 .form-group {
@@ -16,7 +16,6 @@
     padding: 25px;
     border-radius: 50px;
     border: 1px solid rgb(224,224,224);
-    min-width: 580px;
 }
 
 .img-container {
@@ -72,7 +71,7 @@ input::file-selector-button {
     width: 50px;
 }
 
-.category-color-container {
+.color-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -93,3 +92,68 @@ input::file-selector-button {
     width: 610px;
     margin-top: 5px;
 }
+
+@media (max-width: 768px) {
+    .create-page-title {
+        margin-top: 25px;
+    }
+    .img-container{
+        margin: 0;
+        padding: 0;
+    }
+
+    .input-create , .input-create-content {
+        display: block;
+        width: 400px;
+    }
+
+    .category-input {
+        width: 100px;
+    }
+
+    .category-color-container {
+        display: flex;
+        width: 400px;
+        justify-content: space-between;
+    }
+
+    .submit-post {
+        width: 400px;
+    }
+
+    .form-group {
+        margin-bottom: 100px;
+    }
+}
+@media (max-width: 512px) {
+    .img-container{
+        margin: 0;
+        padding: 0;
+    }
+
+    .input-create , .input-create-content {
+        display: block;
+        width: 250px;
+    }
+
+    .category-input {
+        width: 250px;
+    }
+
+    .category-color-container {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+    .color-container {
+        width: 250px;
+        justify-content: space-between;
+    }
+    .submit-post {
+        width: 250px;
+    }
+
+    .form-group {
+        margin-bottom: 80px;
+    }
+  }

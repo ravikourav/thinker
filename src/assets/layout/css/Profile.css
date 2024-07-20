@@ -1,4 +1,5 @@
 .profile-container {
+    margin-top: 75px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,4 +62,10 @@ p {
     text-underline-offset: 15px;
     text-decoration-thickness: 3px;
     text-decoration-style: solid;
+}
+
+@media (max-width: 768px){
+    .profile-container{
+        margin: 0px;
+    }
 }

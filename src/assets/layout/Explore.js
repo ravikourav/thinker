@@ -4,10 +4,14 @@ import CardGrid from '../components/CardGrid.js';
 import { ReactComponent as BackImg } from '../image/arrow-back.svg';
 import './css/Explore.css';
 
+import { useIsMobile } from '../utils/screenSize.js';
 
 import categoryData from '../../temp/Explore.json';
 
 function Explore() {
+  
+  const isMobile = useIsMobile();
+
   const [category, setCategory] = useState([]);
   const [selectedCard, setSelectedCard] = useState(null);
 
@@ -20,7 +24,12 @@ function Explore() {
   };
 
   return (
-    <div className='full-page-layout'>
+    <div className='explore-page-layout'>
+      {isMobile && 
+        <div className="explore-search-container">
+          <input type="text" placeholder="Search" className="main-input search-input" />
+        </div>
+      }
       <div className='card-layout'>
         {!selectedCard ? (
           category.map((card, index) => (
