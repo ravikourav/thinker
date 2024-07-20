@@ -62,5 +62,37 @@
         "message": "You have a new message from RobertGreen.",
         "timestamp": "2024-07-19T12:45:00.000Z",
         "read": true
+    },
+    {
+        "id": "5",
+        "type": "message",
+        "title": "New Message",
+        "message": "You have a new message from RobertGreen.",
+        "timestamp": "2024-07-19T12:45:00.000Z",
+        "read": true
+    },
+    {
+        "id": "3",
+        "type": "like",
+        "title": "New Like",
+        "message": "MarkJones liked your photo.",
+        "timestamp": "2024-07-19T11:45:00.000Z",
+        "read": true
+    },
+    {
+        "id": "4",
+        "type": "mention",
+        "title": "New Mention",
+        "message": "AliceBrown mentioned you in a post: '@Ravi, check this out!'",
+        "timestamp": "2024-07-19T12:00:00.000Z",
+        "read": false
+    },
+    {
+        "id": "5",
+        "type": "message",
+        "title": "New Message",
+        "message": "You have a new message from RobertGreen.",
+        "timestamp": "2024-07-19T12:45:00.000Z",
+        "read": true
     }
 ]

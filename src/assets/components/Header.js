@@ -19,7 +19,8 @@ function Header()  {
   const [isLoggedIn] = useState(true);
   const [isLoginOverlayVisible, setIsLoginOverlayVisible] = useState(false);
 
-  const [notifOvarlayVisible , setNotifOverlayVisible] = useState(false);
+  const [notificationBgPage , setNotificationBgPage] = useState();
+  const [notificationOpened , setNotificationOpened] = useState(false);
 
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
@@ -40,16 +41,28 @@ function Header()  {
     setSelected(clicked);
   };
 
+  const handleNotification = () => {
+    if(!notificationOpened){
+      setNotificationBgPage(Selected);
+      select('Notification');
+      setNotificationOpened(true);
+    }
+    else{
+      select(notificationBgPage);
+      setNotificationOpened(false);
+    }
+  }
+
   return (
     <div className='header-root' >
       {!isMobile ? (
       <div className="header-container">
         <img className="logo" src="/logo192.png" alt="Logo" />
         <div className="nav-links">
-          <Link className={Selected === 'Home' ? 'nav-selected' : '' } to="/" onClick={()=>{select('Home')}}>Home</Link>
-          <Link className={Selected === 'Explore' ? 'nav-selected' : '' } to="explore" onClick={()=>{select('Explore')}}>Explore</Link>
+          <Link className={`desktop-nav-link ${Selected === 'Home' ? 'nav-selected' : '' }`} to="/" onClick={()=>{select('Home')}}>Home</Link>
+          <Link className={`desktop-nav-link ${Selected === 'Explore' ? 'nav-selected' : '' }`} to="explore" onClick={()=>{select('Explore')}}>Explore</Link>
           { isLoggedIn && (
-          <Link className={Selected === 'Create' ? 'nav-selected' : '' } to="create" onClick={()=>{select('Create')}}>Create</Link>)}
+          <Link className={`desktop-nav-link {Selected === 'Create' ? 'nav-selected' : '' }`} to="create" onClick={()=>{select('Create')}}>Create</Link>)}
         </div>
         <div className="search-container">
           <input type="text" placeholder="Search" className="main-input search-input" />
@@ -57,7 +70,8 @@ function Header()  {
         <div className="header-user-container">
           {isLoggedIn ? (
             <div className='left-nav-links'>
-              <BellIcon fill={notifOvarlayVisible ? 'black' : 'white'} stroke={notifOvarlayVisible ? 'white' :'#767676' } className='icon' onClick={()=>{setNotifOverlayVisible(!notifOvarlayVisible)}} />
+              <BellIcon fill={Selected === 'Notification' ? 'black' : 'white'} stroke={Selected === 'Notification' ? 'white' :'#767676' } className='icon'
+              onClick={handleNotification} />
               <Link to='profile' onClick={()=>{select('Profile')}} >
                 <img className= 'profile-picture' src={placeholder} alt="User" />
               </Link>
@@ -70,7 +84,6 @@ function Header()  {
         </div>
       </div>
       ):(
-        <>
         <div className="header-container">
             <Link to="/" onClick={()=>{select('Home')}}>
               <HomeIcon fill={ Selected === 'Home' ? 
@@ -91,9 +104,8 @@ function Header()  {
             )}
             {isLoggedIn ? (
             <>
-              <Link to='notification' onClick={()=>{select('Create')}}>
-                <BellIcon fill={notifOvarlayVisible ? 'black' : 'white'} stroke={notifOvarlayVisible ? 'white' :'#767676' } className='nav-icon'/>
-              </Link>
+              <BellIcon fill={Selected === 'Notification' ? 'black' : 'white'} stroke={Selected === 'Notification' ? 'white' :'#767676' } className='nav-icon'
+              onClick={handleNotification} />
               <Link to='profile' onClick={()=>{select('Profile')}} >
                 <img className= 'nav-icon' src={placeholder} alt="User" />
               </Link>
@@ -104,10 +116,9 @@ function Header()  {
             </>
             )}
         </div>
-      </>
       )}    
 
-      {isMobile && notifOvarlayVisible && <NotificationModel />}
+      {Selected === 'Notification' && <NotificationModel />}
       
       <Login
         isVisible={isLoginOverlayVisible}

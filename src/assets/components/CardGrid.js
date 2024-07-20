@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './css/CardGrid.css';
-import Card from './Card';
+import Card from './Card.js';
 import DetailedCard from './DetailedCard';
 
 const CardGrid = ({ data }) => {

@@ -10,8 +10,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
-  z-index: 1000;
+  padding: 10px 0px;
+  z-index: 99;
 }
 
 .logo {
@@ -25,6 +25,7 @@
   border: 2px solid white;
   color: gray;
   cursor: pointer;
+  padding: 0px 5px;
 }
 
 .icon-selected{
@@ -36,10 +37,10 @@
   height: 35px;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 50px;
+  padding: 0px 5px;
 }
 
-
-a {
+.desktop-nav-link {
   text-decoration: none;
   font-weight: 500;
   color: #000000;
@@ -78,7 +79,6 @@ a {
 
 .left-nav-links {
   align-items: center;
-  width: 108px;
 }
 
 @media (max-width: 768px) {
@@ -86,10 +86,12 @@ a {
     bottom: -10px;
     justify-content: space-around;
     flex: 1;
+    box-shadow: rgba(0, 0, 0, 0.1) 10px 0px 8px 4px;
   }
   .nav-icon {
     width: 30px;
     height: 30px;
+    padding: 10px;
   }
 }
 

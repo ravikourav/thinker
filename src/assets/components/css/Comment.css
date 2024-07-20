@@ -8,6 +8,7 @@
 .main-comment {
     display: flex;
     justify-content: center;
+    width: 90%;
 }
 
 .comment-profile-picture {
@@ -90,3 +91,23 @@
     margin-left: 15px;
     width: 300px;
 }
+
+@media (max-width: 994px){
+    .content-wraper {
+      flex-direction: column;
+    }
+  
+    .modal-box {
+      width: 400px;
+    }
+  }
+  
+  @media (max-width: 418px){
+    .content-wraper {
+      display: flex;
+      flex-direction: column;
+    }
+    .modal-box {
+      width: 100vw;
+    }
+  }
