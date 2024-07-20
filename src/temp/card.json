@@ -7,6 +7,7 @@
         "author": "Nelson Mandela",
         "contentColor": "#ffffff",
         "background": "https://picsum.photos/id/101/200/300",
+        "likes": 189,
         "comments": [
             {
                 "username": "JohnDoe",
@@ -60,6 +61,7 @@
         "author": "Walt Disney",
         "contentColor": "#ffffff",
         "background": "https://picsum.photos/id/102/200/300",
+        "likes": 18,
         "comments": [
             {
                 "username": "AliceBrown",
@@ -113,6 +115,7 @@
         "author": "Steve Jobs",
         "contentColor": "#ffffff",
         "background": "https://picsum.photos/id/103/200/300",
+        "likes": 19,
         "comments": [
             {
                 "username": "JamesBond",
@@ -180,6 +183,7 @@
         "author": "Nelson Mandela",
         "contentColor": "#ffffff",
         "background": "https://picsum.photos/id/101/200/300",
+        "likes": 18423,
         "comments": [
             {
                 "username": "JohnDoe",
@@ -225,6 +229,7 @@
         "author": "Walt Disney",
         "contentColor": "#ffffff",
         "background": "https://picsum.photos/id/102/200/300",
+        "likes": 1231,
         "comments": [
             {
                 "username": "AliceBrown",
@@ -270,6 +275,7 @@
         "author": "Steve Jobs",
         "contentColor": "#ffffff",
         "background": "https://picsum.photos/id/103/200/300",
+        "likes": 1023,
         "comments": [
             {
                 "username": "JamesBond",
@@ -301,6 +307,7 @@
         "author": "Eleanor Roosevelt",
         "contentColor": "#ffffff",
         "background": "https://picsum.photos/id/104/200/300",
+        "likes": 10213,
         "comments": [
             {
                 "username": "TomWright",

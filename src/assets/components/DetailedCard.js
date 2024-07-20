@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState , useRef } from 'react';
 import './css/DetailedCard.css';
 import Card from './Card.js';
+import { formatNumber } from '../utils/formatNumbers.js';
 
 import { ReactComponent as BackIcon } from '../image/arrow-back.svg';
 import { ReactComponent as SendIcon } from '../image/send.svg';
@@ -9,27 +10,76 @@ import { ReactComponent as LikeIcon } from '../image/like.svg';
 import { ReactComponent as ShareIcon } from '../image/share.svg';
 import { ReactComponent as CopyIcon } from '../image/copy.svg';
 import { ReactComponent as PlayIcon } from '../image/play.svg';
+import { ReactComponent as PauseIcon } from '../image/pause.svg';
 
 import TempImg from '../image/profile.png';
 import Comment from './Comment.js';
 
-function DetailedCard({ selectedCard, onClose }) {
+function DetailedCard({ selectedCard , onClose }) {
 
+  const [likes, setLikes] = useState(selectedCard.likes || 0);
+  const [liked, setLiked] = useState(false);
+
+  const [copied, setCopied] = useState(false);
   const [hideComment , setHideComment] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const utteranceRef = useRef(null); // Ref to store the utterance instance
 
   const handleTextToSpeech = (text) => {
     if ('speechSynthesis' in window) {
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.voice = speechSynthesis.getVoices().find(voice => voice.lang === 'en-US');
-      speechSynthesis.speak(utterance);
+      if (!isPlaying) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.voice = speechSynthesis.getVoices().find(voice => voice.lang === 'en-US');
+        utterance.onend = () => setIsPlaying(false); // Reset playing state when speech ends
+        speechSynthesis.speak(utterance);
+        utteranceRef.current = utterance; // Store the utterance instance
+        setIsPlaying(true);
+      } else {
+        speechSynthesis.pause();
+        setIsPlaying(false);
+      }
     } else {
       alert('Sorry, your browser does not support text to speech.');
     }
   };
 
-  function speak(){
-    handleTextToSpeech(selectedCard.author + ' said. ' + selectedCard.content);
-  }
+  const handleResume = () => {
+    if ('speechSynthesis' in window && speechSynthesis.paused) {
+      speechSynthesis.resume();
+      setIsPlaying(true);
+    }
+  };
+
+  const handleSpeak = () => {
+    if (isPlaying) {
+      speechSynthesis.pause();
+      setIsPlaying(false);
+    } else if (speechSynthesis.paused) {
+      handleResume();
+    } else {
+      handleTextToSpeech(`${selectedCard.author} said, "${selectedCard.content}"`);
+    }
+  };
+
+  const handleLike = () => {
+    if (liked) {
+      setLikes(likes - 1);
+    } else {
+      setLikes(likes + 1);
+    }
+    setLiked(!liked);
+  };
+
+  const handleCopy = () => {
+    const textToCopy = `${selectedCard.author} said, "${selectedCard.content}"`;
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }).catch(err => {
+      console.error('Failed to copy text: ', err);
+    });
+  };
 
   return (
     <div className="modal-wraper">
@@ -74,10 +124,25 @@ function DetailedCard({ selectedCard, onClose }) {
         </div>
       </div>
       <div className='post-controle'>
-        <CopyIcon className='post-icon'></CopyIcon>
-        <PlayIcon className='post-icon' onClick={speak}></PlayIcon>
-        <LikeIcon fill='white' stroke='black' className='post-icon'></LikeIcon>
-        <ShareIcon className='post-icon'></ShareIcon>
+        <div className='control-wraper' onClick={handleSpeak} >
+          {!isPlaying ? 
+          <PlayIcon className='post-icon' /> : 
+          <PauseIcon className='post-icon' />
+          }
+          <p className='controle-lable'>speak</p>
+        </div>
+        <div onClick={handleLike} className='control-wraper' >
+          <LikeIcon fill={liked ? 'red' : 'white'} stroke={liked ? 'red' : 'black'} strokeWidth='3' className='post-icon' />
+          <p className='controle-lable'>{formatNumber(likes)}</p>
+        </div>
+        <div className='control-wraper' onClick={handleCopy}>
+          <CopyIcon className='post-icon' />
+          <p className='controle-lable'>{!copied ? 'Copy' : 'Copied'}</p>
+        </div>
+        {/*<div className='control-wraper' >
+          <ShareIcon className='post-icon' />
+          <p className='controle-lable'>Share</p>
+        </div>*/}
       </div>
     </div>
   );
